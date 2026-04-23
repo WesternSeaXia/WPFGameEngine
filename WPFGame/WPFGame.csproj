@@ -9,8 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Sprites\" />
+    <None Remove="Assets\Sprites\player_sheet.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Assets\Sounds\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Sprites\player_sheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

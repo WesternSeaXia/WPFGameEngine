@@ -21,9 +21,9 @@ namespace WPFGame.Entities.Environment
             player.VelocityY = 0;
         }
 
-        public override void OnDraw(DrawingContext dc, Rect screenBox)
+        protected override void OnDraw(DrawingContext dc, Rect physicalBox, Rect visualBox)
         {
-            dc.DrawRectangle(Brushes.DarkRed, null, screenBox);
+            dc.DrawRectangle(Brushes.DarkRed, null, physicalBox);
         }
     }
 }

@@ -19,6 +19,11 @@ namespace WPFGame.Rendering
 
         public GameCanvas()
         {
+            // 强制边缘像素对齐，关闭抗锯齿，这是像素级游戏必须的
+            RenderOptions.SetEdgeMode(this, EdgeMode.Aliased);
+            // 强制使用高质量位图缩放算法（如果后面要用像素图）
+            RenderOptions.SetBitmapScalingMode(this, BitmapScalingMode.NearestNeighbor);
+
             // 初始化集合，并将当前实例 (this) 作为逻辑上的父级
             children = new VisualCollection(this);
             // 实例化轻量级绘图层

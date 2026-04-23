@@ -37,8 +37,8 @@ namespace WPFGame.Core
                             {
                                 X = xPos,
                                 Y = yPos,
-                                Width = GlobalConfig.TileSize,
-                                Height = GlobalConfig.TileSize
+                                HitboxWidth = GlobalConfig.TileSize,
+                                HitboxHeight = GlobalConfig.TileSize
                             });
                             break;
 
@@ -48,8 +48,8 @@ namespace WPFGame.Core
                             {
                                 X = xPos,
                                 Y = yPos + (GlobalConfig.TileSize - 20),
-                                Width = GlobalConfig.TileSize,
-                                Height = 20
+                                HitboxWidth = GlobalConfig.TileSize,
+                                HitboxHeight = 20
                             });
                             break;
 
@@ -58,8 +58,8 @@ namespace WPFGame.Core
                             {
                                 X = xPos,
                                 Y = yPos,
-                                Width = 40,
-                                Height = 40
+                                HitboxWidth = 40,
+                                HitboxHeight = 50
                             };
                             engine.SetPlayer(player);
                             break;
@@ -70,8 +70,8 @@ namespace WPFGame.Core
                             {
                                 X = xPos + coinOffset,
                                 Y = yPos + coinOffset,
-                                Width = 20,
-                                Height = 20
+                                HitboxWidth = 20,
+                                HitboxHeight = 20
                             });
                             break;
 
@@ -80,8 +80,8 @@ namespace WPFGame.Core
                             {
                                 X = xPos,
                                 Y = yPos,
-                                Width = GlobalConfig.TileSize,
-                                Height = GlobalConfig.TileSize / 2
+                                HitboxWidth = GlobalConfig.TileSize,
+                                HitboxHeight = GlobalConfig.TileSize / 2
                             });
                             break;
 

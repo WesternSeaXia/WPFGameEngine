@@ -1,8 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using WPFGame.Core;
-using WPFGame.Entities.Characters;
-using WPFGame.Entities.Environment;
 using WPFGame.Inputs;
 using WPFGame.Rendering;
 
@@ -39,12 +37,12 @@ namespace WPFGame
                 "                                            C     ",
                 "           C                            ========= ",
                 "         #####               C                    ",
-                "                           #####                  ",
+                "                           #####   ########       ",
                 "               C  S   C                           ",
                 " P       #################                        ",
                 "###                                            ###",
                 "        ####                S S S S S S S S S S S ",
-                "##################################################"
+                "##################################################################################################"
             };
 
             // 一键加载地图！

@@ -19,11 +19,11 @@ namespace WPFGame.Entities.Environment
             this.IsDestroyed = true;
         }
 
-        public override void OnDraw(DrawingContext dc, Rect screenBox)
+        protected override void OnDraw(DrawingContext dc, Rect physicalBox, Rect visualBox)
         {
             // 画一个黄色的圆形代表金币 (使用 BoundingBox 的中心点)
-            Point center = new Point(screenBox.X + screenBox.Width / 2, screenBox.Y + screenBox.Height / 2);
-            dc.DrawEllipse(Brushes.Gold, null, center, screenBox.Width / 2, screenBox.Height / 2);
+            Point center = new Point(physicalBox.X + physicalBox.Width / 2, physicalBox.Y + physicalBox.Height / 2);
+            dc.DrawEllipse(Brushes.Gold, null, center, physicalBox.Width / 2, physicalBox.Height / 2);
         }
     }
 }

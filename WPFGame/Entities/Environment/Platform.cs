@@ -8,9 +8,9 @@ namespace WPFGame.Entities.Environment
     {
         public override void Update(double deltaTime) { /* 静态物体无需更新 */ }
 
-        public override void OnDraw(DrawingContext dc, Rect screenBox)
+        protected override void OnDraw(DrawingContext dc, Rect physicalBox, Rect visualBox)
         {
-            dc.DrawRectangle(Brushes.Gray, null, screenBox);
+            dc.DrawRectangle(Brushes.Gray, null, physicalBox);
         }
     }
 }
