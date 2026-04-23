@@ -19,6 +19,10 @@ namespace WPFGame.Entities.Characters
         // Y 轴（垂直方向）的当前瞬时速度。正数向上，负数向下（因为重力是负数）。
         public double VelocityY { get; set; }
 
+        public int MaxHealth { get; set; } = 100;
+        public int CurrentHealth { get; set; } = 100;
+        public int Coins { get; set; } = 0;
+
         // ==========================================
         // 玩家能力常量 (魔术数字的收束)
         // ==========================================

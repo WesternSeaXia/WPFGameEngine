@@ -13,10 +13,9 @@ namespace WPFGame.Entities.Environment
     {
         public override void OnTriggered(Player player)
         {
-            // 给玩家加分 (假设你在 Player 类里加了 Score 属性)
-            // player.Score += 10;
-
-            this.IsDestroyed = true;
+            player.Coins += 1;   // 玩家金币 +1
+            this.IsDestroyed = true; // 标记为销毁，引擎的 Sweep 阶段会把它清理掉
+            this.IsActive = false;   // 防止同一帧内触发两次
         }
 
         protected override void OnDraw(DrawingContext dc, Rect physicalBox, Rect visualBox)
